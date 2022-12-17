@@ -45,7 +45,7 @@ object NativeImageGenerator extends Generator[Parameters.NativeImage] {
         output
 
     val startCmd = {
-      val version = parameters.graalvmVersion.getOrElse("latest.release").dropWhile(_ != ":")
+      val version = parameters.graalvmVersion.getOrElse("latest.release").dropWhile(_ != ':')
       val isInterval = version.startsWith("latest") ||
         version.endsWith("+") ||
         version.contains("[") ||
