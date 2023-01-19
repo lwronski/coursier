@@ -27,9 +27,9 @@ jobs:
       - uses: coursier/setup-action@v1.3.0
         with:
           jvm: 8
-      - name: Copy artifacts
-        run: .github/scripts/maybe-with-graalvm-home.sh copyLauncher artifacts/
-        shell: bash
+#      - name: Copy artifacts
+#        run: .github/scripts/maybe-with-graalvm-home.sh copyLauncher artifacts/
+#        shell: bash
       - name: Build OS packages
         run: .github/scripts/generate-os-packages.sh
         shell: bash

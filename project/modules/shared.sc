@@ -83,7 +83,7 @@ trait CoursierPublishModule extends PublishModule with PublishLocalNoFluff with 
       Developer("alexarchambault", "Alex Archambault", "https://github.com/alexarchambault")
     )
   )
-  def publishVersion = T(buildVersion)
+  def publishVersion = "0.1.0"
   def javacOptions = T {
     super.javacOptions() ++ Seq("-source", "8", "-target", "8")
   }
