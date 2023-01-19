@@ -15,12 +15,10 @@ fi
 
 launcher() {
   local launcherMillCommand="cli.nativeImage"
-  local launcherName
+  local launcherName="cs"
 
   if [[ "$OSTYPE" == "msys" ]]; then
     launcherName="cs.exe"
-  elsels
-    launcherName="cs"
   fi
 
   "$mill" -i copyTo "$launcherMillCommand" "$launcherName" 1>&2
